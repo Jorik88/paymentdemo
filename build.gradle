@@ -20,10 +20,13 @@ sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
+	maven {
+		url "https://dl.bintray.com/stokito/maven"
+	}
 }
-
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile ("com.liqpay:liqpay-sdk:0.6")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
